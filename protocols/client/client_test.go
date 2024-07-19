@@ -19,8 +19,8 @@ import (
 	context "golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	pb "github.com/kata-containers/agent/protocols/grpc"
-	"github.com/kata-containers/agent/protocols/mockserver"
+	pb "github.com/hfyeh/agent/protocols/grpc"
+	"github.com/hfyeh/agent/protocols/mockserver"
 )
 
 const (

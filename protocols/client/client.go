@@ -27,7 +27,7 @@ import (
 	"google.golang.org/grpc/codes"
 	grpcStatus "google.golang.org/grpc/status"
 
-	agentgrpc "github.com/kata-containers/agent/protocols/grpc"
+	agentgrpc "github.com/hfyeh/agent/protocols/grpc"
 )
 
 const (

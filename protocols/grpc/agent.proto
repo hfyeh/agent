@@ -9,7 +9,7 @@ syntax = "proto3";
 package grpc;
 
 import "oci.proto";
-import "github.com/kata-containers/agent/pkg/types/types.proto";
+import "github.com/hfyeh/agent/pkg/types/types.proto";
 import "google/protobuf/empty.proto";
 
 // unstable

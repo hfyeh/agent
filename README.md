@@ -14,13 +14,13 @@
 This project implements an agent called `kata-agent` that runs inside a virtual machine (VM).
 
 The agent manages container processes inside the VM, on behalf of the
-[runtime](https://github.com/kata-containers/runtime) running on the host.
+[runtime](https://github.com/hfyeh/runtime) running on the host.
 
 ## Debug mode
 
 To enable agent debug output, add the `agent.log=debug` option to the guest kernel command line.
 
-See the [developer guide](https://github.com/kata-containers/documentation/blob/master/Developer-Guide.md#enable-full-debug) for further details.
+See the [developer guide](https://github.com/hfyeh/documentation/blob/master/Developer-Guide.md#enable-full-debug) for further details.
 
 ## Developer mode
 
@@ -37,7 +37,7 @@ See [the tracing guide](TRACING.md).
 Add `agent.debug_console` to the guest kernel command line to
 allow the agent process to start a debug console. Debug console is only available if `bash`
 or `sh` is installed in the rootfs or initrd image. Developers can [connect to the virtual
-machine using the debug console](https://github.com/kata-containers/documentation/blob/master/Developer-Guide.md#connect-to-the-virtual-machine-using-the-debug-console)
+machine using the debug console](https://github.com/hfyeh/documentation/blob/master/Developer-Guide.md#connect-to-the-virtual-machine-using-the-debug-console)
 
 ### Enable debug console for firecracker
 

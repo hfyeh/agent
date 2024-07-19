@@ -46,10 +46,10 @@ RUN cd $GOPATH/src/github.com/gogo/protobuf && git checkout -q ${GOGO_COMMIT} \
 	&& go install github.com/gogo/protobuf/{proto,jsonpb,protoc-gen-gogo,gogoproto,protoc-gen-gogofast}
 
 # add agent repository
-ADD . ${GOPATH}/src/github.com/kata-containers/agent
+ADD . ${GOPATH}/src/github.com/hfyeh/agent
 
 # default working dir should be agent dir
-WORKDIR ${GOPATH}/src/github.com/kata-containers/agent
+WORKDIR ${GOPATH}/src/github.com/hfyeh/agent
 
 ENTRYPOINT ["bash", "-c"]
 

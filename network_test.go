@@ -16,8 +16,8 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/kata-containers/agent/pkg/types"
-	pb "github.com/kata-containers/agent/protocols/grpc"
+	"github.com/hfyeh/agent/pkg/types"
+	pb "github.com/hfyeh/agent/protocols/grpc"
 	"github.com/stretchr/testify/assert"
 	"github.com/vishvananda/netlink"
 	"github.com/vishvananda/netns"
@@ -226,7 +226,7 @@ func TestUpdateRoutesIPVlan(t *testing.T) {
 		// route "192.168.0.0/24 dev eth0 proto kernel scope link src 192.168.0.2"
 		// TODO : We dont really handle route protocol currently. We need to add this and
 		// test that protocol is handled.
-		// Issue: https://github.com/kata-containers/agent/issues/405
+		// Issue: https://github.com/hfyeh/agent/issues/405
 		{Dest: "192.168.0.0/24", Gateway: "", Source: "192.168.0.2", Scope: 1, Device: "ifc-name"},
 	}
 	testRoutes.Routes = inputRoutesIPVlanExample

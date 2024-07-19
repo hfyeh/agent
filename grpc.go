@@ -22,8 +22,8 @@ import (
 	"time"
 
 	gpb "github.com/gogo/protobuf/types"
-	"github.com/kata-containers/agent/pkg/types"
-	pb "github.com/kata-containers/agent/protocols/grpc"
+	"github.com/hfyeh/agent/pkg/types"
+	pb "github.com/hfyeh/agent/protocols/grpc"
 	"github.com/opencontainers/runc/libcontainer"
 	"github.com/opencontainers/runc/libcontainer/configs"
 	"github.com/opencontainers/runc/libcontainer/seccomp"

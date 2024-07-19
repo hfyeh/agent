@@ -26,8 +26,8 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 	"github.com/grpc-ecosystem/grpc-opentracing/go/otgrpc"
-	"github.com/kata-containers/agent/pkg/uevent"
-	pb "github.com/kata-containers/agent/protocols/grpc"
+	"github.com/hfyeh/agent/pkg/uevent"
+	pb "github.com/hfyeh/agent/protocols/grpc"
 	"github.com/mdlayher/vsock"
 	"github.com/opencontainers/runc/libcontainer"
 	"github.com/opencontainers/runc/libcontainer/configs"

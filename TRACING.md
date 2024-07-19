@@ -59,7 +59,7 @@ is not desirable to run a `jaeger-agent` process inside the Virtual Machine (VM)
 
 - Adding a Jaeger agent process into the VM would require
   special-case code for handling running the `kata-agent`
-  [as the init daemon](https://github.com/kata-containers/osbuilder).
+  [as the init daemon](https://github.com/hfyeh/osbuilder).
 
 To avoid this complication, agent tracing uses a
 [`VSOCK`](https://www.qemu.org/Features/VirtioVsock) communication channel to
@@ -163,7 +163,7 @@ following:
 # Running the agent with tracing enabled
 
 1. Build a custom non-initrd image using
-   [osbuilder](https://github.com/kata-containers/osbuilder).
+   [osbuilder](https://github.com/hfyeh/osbuilder).
 
    - The image **must** include:
      - The `jaeger-client-socat-redirector.service` systemd service
@@ -291,7 +291,7 @@ steps.
 This allows direct shell access to the container.
 
 See
-[the developer guide](https://github.com/kata-containers/documentation/blob/master/Developer-Guide.md#set-up-a-debug-console)
+[the developer guide](https://github.com/hfyeh/documentation/blob/master/Developer-Guide.md#set-up-a-debug-console)
 for further details.
 
 ## Guest journal redirector
@@ -312,7 +312,7 @@ to a `socat(1)` instance running on the host:
 ## Enable full agent debug
 
 The usual
-[full debug](https://github.com/kata-containers/documentation/blob/master/Developer-Guide.md#enable-full-debug)
+[full debug](https://github.com/hfyeh/documentation/blob/master/Developer-Guide.md#enable-full-debug)
 options need to be supplemented with a few systemd(1) options for the journal
 redirector to work:
 

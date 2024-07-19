@@ -107,7 +107,7 @@ package grpc
 import proto "github.com/gogo/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import types "github.com/kata-containers/agent/pkg/types"
+import types "github.com/hfyeh/agent/pkg/types"
 import google_protobuf2 "github.com/gogo/protobuf/types"
 
 import context "golang.org/x/net/context"

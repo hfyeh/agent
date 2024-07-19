@@ -15,8 +15,8 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	pbTypes "github.com/kata-containers/agent/pkg/types"
-	pb "github.com/kata-containers/agent/protocols/grpc"
+	pbTypes "github.com/hfyeh/agent/pkg/types"
+	pb "github.com/hfyeh/agent/protocols/grpc"
 )
 
 const (
