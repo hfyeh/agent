@@ -48,4 +48,4 @@ require (
 	google.golang.org/genproto v0.0.0-20171123000638-7f0da29060c6 // indirect
 )
 
-replace github.com/uber-go/atomic => go.uber.org/atomic v1.11.0
+replace github.com/uber-go/atomic => go.uber.org/atomic v1.3.1
